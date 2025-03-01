@@ -27,12 +27,22 @@
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  --primary: #da145b;
+}
+
+::selection {
+  background: var(--primary);
+  color: #f4f4f5;
 }
 
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+}
+
+input:focus-visible {
+  outline: 2px solid var(--primary);
 }
 
 html,
@@ -45,7 +55,7 @@ body {
   line-height: 1.5;
   font-weight: 400;
   font-size: 16px;
-  color: #1a1a1a;
+  color: #f4f4f5;
 }
 
 h1,
@@ -56,13 +66,14 @@ h5,
 h6 {
   font-weight: 600;
   line-height: 1.2;
+  color: var(--primary);
 }
 
 a {
-  color: #444444;
+  color: #888;
 }
 a:hover {
-  color: #888888;
+  color: #ccc;
 }
 
 button {
@@ -77,7 +88,13 @@ textarea {
   font: inherit;
 }
 
-/* Add these new styles */
+.title {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+}
+
 .url-container {
   display: flex;
   align-items: center;
@@ -85,7 +102,6 @@ textarea {
   margin-top: 16px;
 }
 
-/* Add this new style */
 .content-container {
   max-width: 36rem;
   text-align: center;
@@ -95,15 +111,16 @@ textarea {
 /* Update url-input width to be 100% since container will control max width */
 .url-input {
   padding: 8px 12px;
-  border: 1px solid #ddd;
+  border: 1px solid #222;
   border-radius: 4px;
   width: 100%;
-  background: #f5f5f5;
+  background: #0a0a0a;
+  color: #e5e5e5;
 }
 
 .copy-button {
   padding: 8px;
-  color: #666;
+  color: #99;
   border-radius: 4px;
   transition: all 0.2s;
   display: flex;
@@ -112,20 +129,16 @@ textarea {
 }
 
 .copy-button:hover {
-  background: #f0f0f0;
+  background: #0f0f0f;
 }
 
 .copy-button:active {
-  background: #e5e5e5;
+  background: #1a1a1a;
 }
 
 .copy-button img {
   width: 20px;
   height: 20px;
-}
-
-.copy-button.copied {
-  background: #28a745;
 }
 
 /* Add footer styles */
@@ -136,15 +149,15 @@ textarea {
   right: 0;
   text-align: center;
   font-size: 14px;
-  color: #666;
+  color: #999;
 }
 
 .footer a {
-  color: #666;
+  color: #999;
   text-decoration: none;
   font-weight: 500;
 }
 
 .footer a:hover {
-  color: #333;
+  color: #ccc;
 }
