@@ -6,7 +6,12 @@ function noSearchDefaultPageRender() {
   app.innerHTML = `
     <div style="display: flex; flex-direction: column; align-items: center; justify-content: center; height: 100vh;">
       <div class="content-container">
-        <h1>Kensaku ⋅ 検索</h1>
+        <h1 class="title">
+          <img style="height: 32px;" src="/kensaku.svg" alt="Kensaku logo" />
+          ⋅
+          <span>Kensaku</span>
+          ⋅
+          <span>検索</span></h1>
         <p>DuckDuckGo's bang redirects are too slow. Add the following URL as a custom search engine to your browser. Enables <a href="https://duckduckgo.com/bang.html" target="_blank">all of DuckDuckGo's bangs.</a></p>
         <div class="url-container"> 
           <input 
