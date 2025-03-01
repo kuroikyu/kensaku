@@ -10,4 +10,4 @@ https://kensaku.kuroikyu.com?q=%s
 
 DuckDuckGo does their redirects server side. Their DNS is...not always great. Result is that it often takes ages.
 
-[Und*ck](https://unduck.link/) solved this by doing all of the work client side. Once you've went to https://kensaku.kuroikyu.com once, the JS is all cache'd and will never need to be downloaded again. Your device does the redirects, not Kensaku.
+The original repo [Und*ck](https://github.com/t3dotgg/unduck) solved this by doing all of the work client side. Once you've went to https://kensaku.kuroikyu.com once, the JS is all cache'd and will never need to be downloaded again. Your device does the redirects, not Kensaku.
