@@ -72,6 +72,7 @@ h6 {
 a {
   color: #888;
 }
+
 a:hover {
   color: #ccc;
 }
@@ -124,7 +125,7 @@ textarea {
 
 .copy-button {
   padding: 8px;
-  color: #99;
+  color: #999;
   border-radius: 4px;
   transition: all 0.2s;
   display: flex;
